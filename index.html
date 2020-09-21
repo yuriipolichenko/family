@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Приклад</title>
+  </head>
+  <body bgcolor="c1c1c1">
+    <h1>Наша сім'я</h1>
+    <header>
+      <img src="/img/photo_2020-09-06_21-20-21.jpg" alt="#" />
+    </header>
+    <h2>Склад сім'ї</h2>
+    <p>
+      Нажми на кнопку і побачиш тата у Facebook <br />
+      <a href="https://www.facebook.com/polichenko.ar" target="_blank"
+        ><img src="/img/male.jpg" width="200" height="200" />
+      </a>
+      <!--!target="_blank" > - відкриває в новому вікні; силка на фейсбук огорнута в зображення-->
+    </p>
+
+    <p>
+      Нажми на кнопку і побачиш маму у Facebook <br />
+      <a
+        href="https://www.facebook.com/profile.php?id=100016042754746"
+        target="_blank"
+        ><img src="/img/female.jpg" width="200" height="200" />
+      </a>
+      <!--!target="_blank" > - відкриває в новому вікні; силка на фейсбук огорнута в зображення-->
+    </p>
+    <br /><br /><br /><br />
+    <h2>
+      Главарь банди
+      <br />
+      <img src="/img/glavar.jpg" alt="#" />
+    </h2>
+    <div>
+      <h2>Якщо бажаєш отримати пілюлєй від главаря заповни форму</h2>
+    </div>
+
+    <form action="#" method="POST" enctype="multipart/form-data">
+      <!--!method="POST" enctype="multipart/form-data"> вказує що ніякі дані не будуть відображатися в адресному рядку-->
+      <!--Заповнення форми-->
+      <div>
+        <!--Форма заповнення імені-->
+        <p>Ім'я</p>
+        <input
+          placeholder="Ім'я"
+          tabindex="1"
+          type="text"
+          name="username"
+        /><!--!placeholder="Ім'я" (Текст неактивний, відображається всередині форми ім'я) tabindex="1" type="text" name="username"-->
+      </div>
+      <div>
+        <!--Форма заповнення імені-->
+        <p>Прізвище</p>
+        <input
+          placeholder="Прізвище"
+          tabindex="1"
+          type="text"
+          name="username"
+        /><!--!placeholder="Ім'я" (Текст неактивний, відображається всередині форми ім'я) tabindex="1" type="text" name="username"-->
+      </div>
+      <div>
+        <p>Пароль</p>
+        <!--Форма заповнення паролів-->
+        <input
+          placeholder="Пароль"
+          tabindex="2"
+          type="password"
+          name="userpass"
+        />
+      </div>
+      <div>
+        <p>Телефон</p>
+        <!--Форма заповнення телефону-->
+        <input
+          placeholder="+380977636421"
+          tabindex="3"
+          type="tel"
+          name="userpfone"
+        />
+      </div>
+      <div>
+        <p>Стать</p>
+        <!--Форма заповнення статі-->
+        <div>
+          <input tabindex="4" type="radio" name="gender" value="male" />
+          Чоловічий
+        </div>
+        <!--Форма заповнення статі <input type="radio" (атрибут кнопки) name="gender" value="male" стать чоловіча,  "Чоловічий" - коментар-->
+        <div>
+          <input
+            tabindex="5"
+            checked
+            type="radio"
+            name="gender"
+            value="female"
+          />
+          Жіночий
+        </div>
+      </div>
+      <div>
+        <p>Одружений/заміжня</p>
+        <input tabindex="6" type="checkbox" name="text" value="yes" /> Так
+        <input tabindex="6" type="checkbox" name="text" value="no" /> ні
+      </div>
+      <div>
+        <p>Додаткова інформація про сееб</p>
+        <textarea tabindex="7" name="text" cols="30" rows="5"></textarea>
+      </div>
+      <div>
+        <p>Додати фото</p>
+        <input type="file" tabindex="8" name="userfoto" />
+      </div>
+      <div>
+        <p>Скільки разів ви бажаєте отримати на горіхи:</p>
+        <select tabindex="9" name="maney">
+          <option value="₴">1-2 рази</option>
+          <option selected value="₴">3-5 рази</option>
+          <option value="₴">6-10 разів</option>
+          <option value="₴">11 і більше</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <button tabindex="10" type="submit">Відправити</button>
+      </div>
+    </form>
+  </body>
+</html>
